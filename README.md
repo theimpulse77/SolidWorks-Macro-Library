@@ -7,7 +7,8 @@ A curated set of tested macros for automating tasks in SolidWorks using VBA, C#,
 - **VBA/** – Sheet metal, BOM, and drawing macros written in VBA.
 - **CSharp/** – Modern C# macros using CreateDefinition/CreateFeature.
 - **Excel/** – BOM tools and data organization macros.
-- **Docs/MacroIndex.md** – Organized list of macros, usage notes, and confidence ratings.
+- - **Docs/VBAMacroIndex.md** – 📘 [Macro Library Index](./Docs/VBAMacroIndex.md)
+
 
 ## ✅ Confidence Ratings
 Each macro is labeled 1–5 based on how well it’s tested:
