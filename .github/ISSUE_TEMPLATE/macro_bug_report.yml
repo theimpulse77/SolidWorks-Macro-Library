@@ -1,0 +1,58 @@
+name: 🐞 Macro Bug Report
+description: Report an issue with an existing macro in the library
+title: "[Bug]: <MacroName> - <short description>"
+labels: [bug]
+assignees: []
+
+body:
+  - type: input
+    id: macro-name
+    attributes:
+      label: Macro Name
+      description: Which macro is this issue related to?
+      placeholder: e.g., InsertFlatPatternsGrid
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where was the macro run?
+      options:
+        - Part
+        - Assembly
+        - Drawing
+        - Excel
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the error, unexpected behavior, or failure.
+      placeholder: What did you expect to happen, and what actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to Reproduce
+      description: Walk us through how to trigger the bug.
+      placeholder: |
+        1. Open SolidWorks...
+        2. Load macro...
+        3. Click 'Run'...
+        4. Error appears...
+    validations:
+      required: false
+
+  - type: input
+    id: version
+    attributes:
+      label: SolidWorks Version
+      description: What version of SolidWorks are you using?
+      placeholder: e.g., SolidWorks 2024 SP3.1
