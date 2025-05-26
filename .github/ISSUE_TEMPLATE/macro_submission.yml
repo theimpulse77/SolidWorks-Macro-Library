@@ -51,7 +51,7 @@ body:
     attributes:
       label: Paste the Macro Code
       description: Paste the macro code here. Make sure it’s properly formatted.
-      placeholder: Insert your code...
+      placeholder: Paste your macro code here...
     validations:
       required: true
 
