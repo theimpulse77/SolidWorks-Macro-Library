@@ -1,0 +1,65 @@
+name: 📤 Submit a New Macro
+description: Contribute a tested macro to the library
+title: "[Submission]: <MacroName> - <short description>"
+labels: [submission]
+assignees: []
+
+body:
+  - type: input
+    id: macro-name
+    attributes:
+      label: Macro Name
+      description: What’s the name of the macro?
+      placeholder: e.g., InsertRouterViews
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Macro Description
+      description: What does this macro do? What problem does it solve?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Target Environment
+      options:
+        - Part
+        - Assembly
+        - Drawing
+        - Excel
+        - General/Helper
+    validations:
+      required: true
+
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - VBA
+        - C#
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: macro-code
+    attributes:
+      label: Paste the Macro Code
+      description: Paste the macro code here. Make sure it’s properly formatted.
+      placeholder: Insert your code...
+    validations:
+      required: true
+
+  - type: input
+    id: confidence
+    attributes:
+      label: Confidence Rating (1–5)
+      placeholder: 3
+      description: 1 = Untested, 5 = Used often with success
+    validations:
+      required: true
