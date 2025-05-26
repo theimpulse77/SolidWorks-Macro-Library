@@ -1,0 +1,26 @@
+# Compiled binaries and temp files
+*.obj
+*.exe
+*.dll
+*.pdb
+*.log
+
+# VBA/Excel-specific
+*.swp
+*.bak
+*.tmp
+*.xlb
+~$*
+
+# SolidWorks backup/temp files
+*.slddrt~
+*.swb~
+*.sldasm~
+*.sldprt~
+*.slddrw~
+*.swp~
+
+# System/macOS junk
+.DS_Store
+__MACOSX/
+Thumbs.db
