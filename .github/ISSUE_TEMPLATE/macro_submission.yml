@@ -47,13 +47,13 @@ body:
       required: true
 
   - type: textarea
-    id: macro-code
-    attributes:
-      label: Paste the Macro Code
-      description: Paste the macro code here. Make sure it’s properly formatted.
-      placeholder: Paste your macro code here...
-    validations:
-      required: true
+  id: macro-code
+  attributes:
+    label: Paste the Macro Code
+    description: Paste the macro code here. Make sure it’s properly formatted.
+    placeholder: "Paste your macro code here..."
+  validations:
+    required: true
 
   - type: input
     id: confidence
