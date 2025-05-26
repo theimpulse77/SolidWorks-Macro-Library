@@ -19,6 +19,7 @@ body:
     attributes:
       label: Macro Description
       description: What does this macro do? What problem does it solve?
+      placeholder: Describe the macro and its purpose...
     validations:
       required: true
 
@@ -47,19 +48,19 @@ body:
       required: true
 
   - type: textarea
-  id: macro-code
-  attributes:
-    label: Paste the Macro Code
-    description: Paste the macro code here. Make sure it’s properly formatted.
-    placeholder: "Paste your macro code here..."
-  validations:
-    required: true
+    id: macro-code
+    attributes:
+      label: Paste the Macro Code
+      description: Paste the macro code here. Make sure it’s properly formatted.
+      placeholder: Paste your macro code here...
+    validations:
+      required: true
 
   - type: input
     id: confidence
     attributes:
       label: Confidence Rating (1–5)
-      placeholder: 3
       description: 1 = Untested, 5 = Used often with success
+      placeholder: 3
     validations:
       required: true
